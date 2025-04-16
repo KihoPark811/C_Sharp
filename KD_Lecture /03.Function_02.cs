@@ -6,17 +6,19 @@ public class Test : MonoBehaviour {
   int intValue;
 
   float floatValue = 10.5f;
-  
-  void FloatToInt()
+  float floatValue2 = 20.5f;
+
+  // 실수를 정수로 바꾸는 함수
+  void FloatToInt(float _parameter)
   {
       intValue = (int)floatValue;
+      print(intValue);
   }
 
   // Use this for initialization
   void Start () {
-      FloatToInt();
-      FloatToInt();
-      print(intValue);
+      FloatToInt(floatValue);
+      FloatToInt(floatValue2);
   }
 
   // Update is called once per frame
